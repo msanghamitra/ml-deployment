@@ -1,0 +1,42 @@
+ml_deployment/
+│
+├── myvirtualenv/                # Virtual environment folder (auto-created)
+│   ├── bin/                     # Contains Python executable for this environment
+│   ├── lib/                     # Installed libraries
+│   └── ...                      # Other files for venv management
+│
+├── app/                         # Your application folder
+│   ├── train_model.py           # Your training script
+│   └── other_scripts.py         # Other Python scripts
+│
+├── data/                        # Data folder (e.g., datasets, processed data)
+│   ├── train.csv
+│   ├── test.csv
+│   └── ...
+│
+├── models/                      # Saved models (e.g., pickle or joblib files)
+│   ├── model.pkl
+│   └── ...
+│
+├── requirements.txt             # List of dependencies
+└── README.md                    # Project documentation
+
+
+Step 1: Set up a new environment
+python -m venv myvirtualenv
+
+Step 2: Make sure you are in the virtual environment
+source myvirtualenv/bin/activate
+
+Step 3: Create the requirements.txt file and fill it out with the following library list.
+pandas
+scikit-learn
+fastapi
+pydantic
+uvicorn
+streamlit
+
+Step 4: After the requirements.txt ready, we must install them using the following code.
+pip install -r requirements.txt
+
+Step 5: Create a 'data' folder under the myvirtualenv folder. Then download  the diabetes data from Kaggle (https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database)
