@@ -22,3 +22,5 @@ models/
 venv/
 myirtualenv/
 myvirtualenv/
+.DS_Store
+.zshrc
